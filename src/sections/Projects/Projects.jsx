@@ -3,8 +3,12 @@ import mentalia from "../../assets/mentalia-logo.png";
 import ironInvaders from "../../assets/iron-invaders-logo.png";
 import myBookWishlist from "../../assets/book-wishlist-logo.png";
 import ProjectCard from "../../common/ProjectCard";
+import quizLight from "../../assets/js-quiz-light.jpeg";
+import quizDark from "../../assets/js-quiz-dark.jpeg";
+import { useTheme } from "../../common/ThemeContext";
 
 function Projects() {
+  const { theme } = useTheme();
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
@@ -27,6 +31,12 @@ function Projects() {
           link={"https://mybookwishlist.netlify.app/wishlist"}
           h3="My Book Wishlist"
           p="Keep track of the books you want to read, the ones you are currently reading and the ones you have already read. Built with React."
+        />
+        <ProjectCard
+          src={theme === "light" ? { quizDark } : { quizLight }}
+          link={"https://franpazos.netlify.app/"}
+          h3="JavaScript Quiz"
+          p="Test your JavaScript knowledge with this quiz. Built React and TypeScript."
         />
       </div>
     </section>
