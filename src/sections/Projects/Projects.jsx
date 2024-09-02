@@ -33,8 +33,8 @@ function Projects() {
           p="Keep track of the books you want to read, the ones you are currently reading and the ones you have already read. Built with React."
         />
         <ProjectCard
-          src={theme === "light" ? { quizDark } : { quizLight }}
-          link={"https://franpazos.netlify.app/"}
+          src={theme === "light" ? quizDark : quizLight}
+          link={"https://javaescript-quiz.netlify.app/"}
           h3="JavaScript Quiz"
           p="Test your JavaScript knowledge with this quiz. Built React and TypeScript."
         />
