@@ -20,14 +20,14 @@ function Skills() {
         <SkillList src={checkmarkIcon} skill="Express.js" />
         <SkillList src={checkmarkIcon} skill="Tailwind" />
         <SkillList src={checkmarkIcon} skill="Bootsrap" />
+        <SkillList src={checkmarkIcon} skill="MUI" />
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkmarkIcon} skill="MongoDB" />
         <SkillList src={checkmarkIcon} skill="Git" />
+        <SkillList src={checkmarkIcon} skill="MongoDB" />
+        <SkillList src={checkmarkIcon} skill="SQL" />
         <SkillList src={loading} skill="Angular" />
-        <SkillList src={loading} skill="Java" />
-        <SkillList src={loading} skill="Golang" />
       </div>
       <hr />
     </section>
